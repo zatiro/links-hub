@@ -22,16 +22,21 @@ export default function LinkCard() {
 
   return (
     <li className="grid grid-flow-row px-4 py-3 rounded-md border-t-4 border-green-500 bg-sky-950 text-white min-h-[10rem] min-w-[14rem]">
-      <header className="">
-        <h1 className="uppercase tracking-[0.2rem] m-0">Portal</h1>
+      <header className="space-y-1">
+        <h1 className="uppercase tracking-[0.2rem] m-0 text-sm">Portal</h1>
         <a
           href="http://embraer.com.br"
-          className="text-sky-500 text-lg font-sans font-medium  hover:underline hover:underline-offset-1"
+          className="text-sky-500 text-xl font-sans font-medium  hover:underline hover:underline-offset-1"
         >
           Portal ELEB
         </a>
+        <div className="grid grid-flow-col divide-x gap-2 text-md pt-3">
+          <span className="">Qualidade</span>
+          <span className="pl-2">Gestão</span>
+          <span className="pl-2">ELEB</span>
+        </div>
       </header>
-      <section className="flex flex-col items-start justify-end gap-y-1">
+      <section className="flex flex-col items-start justify-end border-t border-sky-700">
         <div className="flex flex-row items-center gap-2">
           <button
             className={`${effect ? 'animate-wiggle' : ''}
@@ -46,11 +51,6 @@ export default function LinkCard() {
             )}
             <span>{favouriteCount}</span>
           </button>
-        </div>
-        <div className="grid grid-flow-col divide-x gap-2">
-          <span className="">Qualidade</span>
-          <span className="pl-2">Gestão</span>
-          <span className="pl-2">ELEB</span>
         </div>
       </section>
     </li>
