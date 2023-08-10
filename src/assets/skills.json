@@ -488,41 +488,7 @@
       "url": "https://img.shields.io/badge/Wordpress-21759B?style=for-the-badge&logo=wordpress&logoColor=white"
     }
   ],
-  "Streaming": [
-    {
-      "name": "Amazon Prime",
-      "url": "https://img.shields.io/badge/Amazon%20Prime-00A8E1?style=for-the-badge&logo=netflix&logoColor=white"
-    },
-    {
-      "name": "Crunchyroll",
-      "url": "https://img.shields.io/badge/Crunchyroll-F47521?style=for-the-badge&logo=crunchyroll&logoColor=white"
-    },
-    {
-      "name": "Facebook Gaming",
-      "url": "https://img.shields.io/badge/Facebook_Gaming-005FED?style=for-the-badge&logo=facebook-gaming&logoColor=white"
-    },
-    {
-      "name": "Hulu",
-      "url": "https://img.shields.io/badge/Hulu-1CE783?style=for-the-badge&logo=hulu&logoColor=white"
-    },
-    {
-      "name": "Netflix",
-      "url": "https://img.shields.io/badge/Netflix-E50914?style=for-the-badge&logo=netflix&logoColor=white"
-    },
-    {
-      "name": "Twitch",
-      "url": "https://img.shields.io/badge/Twitch-9146FF?style=for-the-badge&logo=twitch&logoColor=white"
-    },
-    {
-      "name": "YouTube",
-      "url": "https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"
-    },
-    {
-      "name": "YouTube Gaming",
-      "url": "https://img.shields.io/badge/YouTube_Gaming-FF0000?style=for-the-badge&logo=youtube-gaming&logoColor=white"
-    }
-  ],
-
+  
   "🚀 Skills": [
     {
       "name": "C#",
@@ -1222,88 +1188,6 @@
     }
   ],
 
-  "❤ Funding": [
-    {
-      "name": "alipay",
-      "url": "https://img.shields.io/badge/alipay-00A1E9?style=for-the-badge&logo=alipay&logoColor=white"
-    },
-    {
-      "name": "amazon pay",
-      "url": "https://img.shields.io/badge/amazon%20pay-F79114?style=for-the-badge&logo=amazon%20pay&logoColor=white"
-    },
-    {
-      "name": "apple pay",
-      "url": "https://img.shields.io/badge/apple%20pay-007AFF?style=for-the-badge&logo=apple%20pay&logoColor=white"
-    },
-    {
-      "name": "Buy Me A Coffee",
-      "url": "https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black"
-    },
-    {
-      "name": "fampay",
-      "url": "https://img.shields.io/badge/fampay-FFAD00?style=for-the-badge&logo=fampay&logoColor=white"
-    },
-    {
-      "name": "G pay",
-      "url": "https://img.shields.io/badge/G%20pay-2875E3?style=for-the-badge&logo=googlepay&logoColor=white"
-    },
-    {
-      "name": "Ko-fi",
-      "url": "https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white"
-    },
-    {
-      "name": "Liberapay",
-      "url": "https://img.shields.io/badge/Liberapay-F6C915?style=for-the-badge&logo=liberapay&logoColor=black"
-    },
-    {
-      "name": "OpenCollective",
-      "url": "https://img.shields.io/badge/OpenCollective-1F87FF?style=for-the-badge&logo=OpenCollective&logoColor=white"
-    },
-    {
-      "name": "Patreon",
-      "url": "https://img.shields.io/badge/Patreon-F96854?style=for-the-badge&logo=patreon&logoColor=white"
-    },
-    {
-      "name": "Payoneer",
-      "url": "https://img.shields.io/badge/Payoneer-D73F03?style=for-the-badge&logo=payoneer&logoColor=white"
-    },
-    {
-      "name": "PayPal",
-      "url": "https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white"
-    },
-    {
-      "name": "Paytm",
-      "url": "https://img.shields.io/badge/Paytm-002970?style=for-the-badge&logo=paytm&logoColor=00BAF2"
-    },
-    {
-      "name": "phonepe",
-      "url": "https://img.shields.io/badge/phonepe-3DDC84?style=for-the-badge&logo=phonepe&logoColor=white&color=purple"
-    },
-    {
-      "name": "picpay",
-      "url": "https://img.shields.io/badge/picpay-21C25E?style=for-the-badge&logo=picpay&logoColor=white"
-    },
-    {
-      "name": "Razorpay",
-      "url": "https://img.shields.io/badge/Razorpay-02042B?style=for-the-badge&logo=razorpay&logoColor=3395FF"
-    },
-    {
-      "name": "samsung pay",
-      "url": "https://img.shields.io/badge/samsung%20pay-1D49C0?style=for-the-badge&logo=samsung%20pay&logoColor=white"
-    },
-    {
-      "name": "sponsor",
-      "url": "https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=white"
-    },
-    {
-      "name": "Stripe",
-      "url": "https://img.shields.io/badge/Stripe-626CD9?style=for-the-badge&logo=Stripe&logoColor=white"
-    },
-    {
-      "name": "wise",
-      "url": "https://img.shields.io/badge/wise-394e79?style=for-the-badge&logo=transferwise&logoColor=00B9FF"
-    }
-  ],
   "🎶 Sound": [
     {
       "name": "1001tracklists",
@@ -1370,64 +1254,7 @@
       "url": "https://img.shields.io/badge/Castbox-F55B23?logo=castbox&logoColor=fff&style=for-the-badge"
     }
   ],
-  "🍔 Food": [
-    {
-      "name": "Aiqfome",
-      "url": "https://img.shields.io/badge/Aiqfome-7A1FA2?style=for-the-badge&logo=aiqfome&logoColor=white"
-    },
-    {
-      "name": "Burger King",
-      "url": "https://img.shields.io/badge/Burger King-D62300?style=for-the-badge&logo=Burger%20King&logoColor=white"
-    },
-    {
-      "name": "Deliveroo",
-      "url": "https://img.shields.io/badge/Deliveroo-00CCBC?style=for-the-badge&logo=Deliveroo&logoColor=white"
-    },
-    {
-      "name": "DoorDash",
-      "url": "https://img.shields.io/badge/DoorDash-FF3008?style=for-the-badge&logo=DoorDash&logoColor=white"
-    },
-    {
-      "name": "foodpanda",
-      "url": "https://img.shields.io/badge/foodpanda-E23744?style=for-the-badge&logo=zomato&logoColor=white"
-    },
-    {
-      "name": "Grab",
-      "url": "https://img.shields.io/badge/Grab-00B14F?style=for-the-badge&logo=grab&logoColor=white"
-    },
-    {
-      "name": "Grubhub",
-      "url": "https://img.shields.io/badge/Grubhub-F63440?style=for-the-badge&logo=Grubhub&logoColor=white"
-    },
-    {
-      "name": "iFood",
-      "url": "https://img.shields.io/badge/iFood-EA1D2C?style=for-the-badge&logo=ifood&logoColor=white"
-    },
-    {
-      "name": "KFC",
-      "url": "https://img.shields.io/badge/KFC-F40027?style=for-the-badge&logo=kfc&logoColor=white"
-    },
-    {
-      "name": "McDonald's",
-      "url": "https://img.shields.io/badge/McDonald's-FBC817?style=for-the-badge&logo=McDonald's&logoColor=white"
-    },
-    {
-      "name": "Postmates",
-      "url": "https://img.shields.io/badge/Postmates-000000?style=for-the-badge&logo=Postmates&logoColor=white"
-    },
-    {
-      "name": "Swiggy",
-      "url": "https://img.shields.io/badge/Swiggy-FC8019?style=for-the-badge&logo=Swiggy&logoColor=white"
-    },
-    {
-      "name": "Uber Eats",
-      "url": "https://img.shields.io/badge/Uber_Eats-5FB709?style=for-the-badge&logo=uber-eats&logoColor=white"
-    },
-    {
-      "name": "Zomato",
-      "url": "https://img.shields.io/badge/Zomato-E23744?style=for-the-badge&logo=zomato&logoColor=white"
-    }
-  ],
+  
   "📊 Analytics": [
     {
       "name": "Amazon CloudWatch",
@@ -2629,56 +2456,6 @@
     {
       "name": "Crowdin",
       "url": "https://img.shields.io/badge/Crowdin-2E3340.svg?style=for-the-badge&logo=Crowdin&logoColor=white"
-    }
-  ],
-  "🚗 Car": [
-    {
-      "name": "Lamborghini",
-      "url": "https://img.shields.io/badge/Lamborghini-DDB320?logo=lamborghini&logoColor=fff&style=for-the-badge"
-    },
-    {
-      "name": "Bugatti",
-      "url": "https://img.shields.io/badge/Bugatti-BE0030?logo=bugatti&logoColor=fff&style=for-the-badge"
-    },
-    {
-      "name": "Porsche",
-      "url": "https://img.shields.io/badge/Porsche-B12B28?logo=porsche&logoColor=fff&style=for-the-badge"
-    },
-    {
-      "name": "Tesla",
-      "url": "https://img.shields.io/badge/Tesla-C00?logo=tesla&logoColor=fff&style=for-the-badge"
-    },
-    {
-      "name": "Ferrari",
-      "url": "https://img.shields.io/badge/Ferrari-D40000?logo=ferrari&logoColor=fff&style=for-the-badge"
-    },
-    {
-      "name": "Toyota",
-      "url": "https://img.shields.io/badge/Toyota-EB0A1E?logo=toyota&logoColor=fff&style=for-the-badge"
-    },
-    {
-      "name": "Mitsubishi",
-      "url": "https://img.shields.io/badge/Mitsubishi-E60012?logo=mitsubishi&logoColor=fff&style=for-the-badge"
-    },
-    {
-      "name": "Maserati",
-      "url": "https://img.shields.io/badge/Maserati-0C2340?logo=maserati&logoColor=fff&style=for-the-badge"
-    },
-    {
-      "name": "BMW",
-      "url": "https://img.shields.io/badge/BMW-0066B1?logo=bmw&logoColor=fff&style=for-the-badge"
-    },
-    {
-      "name": "Land Rover",
-      "url": "https://img.shields.io/badge/Land%20Rover-005A2B?logo=landrover&logoColor=fff&style=for-the-badge"
-    },
-    {
-      "name": "Mercedes",
-      "url": "https://img.shields.io/badge/Mercedes-242424?logo=mercedes&logoColor=fff&style=for-the-badge"
-    },
-    {
-      "name": "Audi",
-      "url": "https://img.shields.io/badge/Audi-BB0A30?logo=audi&logoColor=fff&style=for-the-badge"
     }
   ],
   "🎨 Designer": [
