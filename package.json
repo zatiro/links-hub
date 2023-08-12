@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.16",
     "@heroicons/react": "^2.0.18",
     "@types/node": "20.4.9",
     "@types/react": "18.2.19",
@@ -24,6 +25,11 @@
   },
   "devDependencies": {
     "@rocketseat/eslint-config": "^2.1.0",
-    "eslint": "8.46.0"
+    "@tailwindcss/custom-forms": "^0.2.1",
+    "@typescript-eslint/parser": "^6.3.0",
+    "eslint": "8.46.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-tailwindcss": "^3.13.0",
+    "prettier": "^3.0.1"
   }
 }
