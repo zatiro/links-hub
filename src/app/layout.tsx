@@ -16,7 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className + ' bg-zinc-900'}>{children}</body>
+      <body className={inter.className + ' bg-zinc-900'}>
+        <header className="sticky top-0 z-50 h-16 w-full bg-sky-700 bg-opacity-70 shadow-md backdrop-blur"></header>
+        {children}
+      </body>
     </html>
   )
 }
