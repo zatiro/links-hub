@@ -1,10 +1,9 @@
 import LinkCard from '@/components/LinkCard'
-import Image from 'next/image'
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <ul className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <ul className="grid grid-cols-2 gap-4 sm:grid-cols-1 lg:grid-cols-3">
         <LinkCard
           area="Manufatura"
           categorie="Roteiro"
@@ -17,7 +16,17 @@ export default function Home() {
           type="App"
         ></LinkCard>
         <LinkCard></LinkCard>
-        <LinkCard></LinkCard>
+        <LinkCard
+          area="GGQ"
+          categorie="Qualificação"
+          favouriteAmount={0}
+          isFavourite={false}
+          link="https://github.com/diego3g.png"
+          logoUrl="https://github.com/diego3g.png"
+          title="SmartRope"
+          role="Engenheiro"
+          type="App"
+        ></LinkCard>
         <LinkCard></LinkCard>
         <LinkCard></LinkCard>
       </ul>
