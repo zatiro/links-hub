@@ -11,4 +11,7 @@ module.exports = {
       parser: '@typescript-eslint/parser',
     },
   ],
+  rules: {
+    'prettier/prettier': 0,
+  },
 }
