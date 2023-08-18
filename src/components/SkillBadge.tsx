@@ -7,7 +7,6 @@ type SkillBadgeProps = {
 export default function SkillBadge({ url }: SkillBadgeProps) {
   return (
     <div>
-      {/* <h2 className="text-zinc-200 text-sm">{name}</h2> */}
       <Image
         src={url}
         height={100}

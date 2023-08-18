@@ -2,12 +2,6 @@ import SkillBadge from '@/components/SkillBadge'
 import { Skill } from './SkillsList'
 import SkillPopover from './SkillPopover'
 
-import {
-  AcademicCapIcon as AcademicCapIconSolid,
-  RocketLaunchIcon as RocketLaunchIconSolid,
-  BeakerIcon as BeakerIconSolid,
-  LightBulbIcon as LightBulbIconSolid,
-} from '@heroicons/react/24/solid'
 import { SkillLevelOptions, skillLevelIcon } from './SkillLevelRadio'
 
 type SkillLevelContainer = {
@@ -15,20 +9,20 @@ type SkillLevelContainer = {
   skills: Skill[]
 }
 
-export default function SkillLevelContainer({
+export default function UserSkillLevelContainer({
   level,
   skills,
 }: SkillLevelContainer) {
   return (
     <div className="py-2">
-      <h2 className="flex flex-row gap-3 border-b-2 py-1 text-zinc-100">
+      <h2 className="flex flex-row gap-3 border-b-2 py-1">
         {skillLevelIcon(level, true)} {level}
       </h2>
-      <div className="mt-2 flex flex-wrap justify-between gap-3">
-        {skills.map(({ url }, index) => {
+      <div className="mt-2 flex flex-wrap justify-start gap-2">
+        {skills.map((skill, index) => {
           return (
-            <SkillPopover key={index}>
-              <SkillBadge url={url} />
+            <SkillPopover key={index} level={level} skillName={skill.name}>
+              <SkillBadge url={skill.url} />
             </SkillPopover>
           )
         })}

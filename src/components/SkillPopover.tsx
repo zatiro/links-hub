@@ -1,49 +1,31 @@
-import { Popover, Transition } from '@headlessui/react'
-import { Fragment, useState } from 'react'
-import {
-  XCircleIcon,
-  AcademicCapIcon,
-  BeakerIcon,
-  LightBulbIcon,
-  RocketLaunchIcon,
-} from '@heroicons/react/24/outline'
-import {
-  AcademicCapIcon as AcademicCapIconSolid,
-  BeakerIcon as BeakerIconSolid,
-  LightBulbIcon as LightBulbIconSolid,
-  RocketLaunchIcon as RocketLaunchIconSolid,
-} from '@heroicons/react/24/solid'
+import { useState } from 'react'
 import SkillLevelRadio from './SkillLevelRadio'
+import { Popover, PopoverContent, PopoverTrigger } from './ui/popover'
+import { Command, CommandList, CommandGroup } from './ui/command'
 
 type SkillPopoverProps = {
   children: JSX.Element
   key?: number
+  level?: string
+  skillName: string
 }
 
-export default function SkillPopover({ children }: SkillPopoverProps) {
-  const [skillLevel, setSkillLevel] = useState('')
+export default function SkillPopover({ children, level, skillName }: SkillPopoverProps) {
+  const [skillLevel, setSkillLevel] = useState(level)
 
-  function handleSkillLevelChange(event: React.ChangeEvent<HTMLInputElement>) {
-    setSkillLevel(event.target.value)
+  function handleSkillLevelChange(level: string) {
+    setSkillLevel(level)
 
-    console.log(event.target.value)
+    console.log(level, skillName)
   }
 
   return (
-    <Popover className="relative">
-      <Popover.Button>{children}</Popover.Button>
-      <Transition
-        as={Fragment}
-        enter="transition ease-out duration-200"
-        enterFrom="opacity-0 translate-y-1"
-        enterTo="opacity-100 translate-y-0"
-        leave="transition ease-in duration-150"
-        leaveFrom="opacity-100 translate-y-0"
-        leaveTo="opacity-0 translate-y-1"
-      >
-        <Popover.Panel className="absolute left-1/2 z-10 w-max max-w-sm -translate-x-1/2 px-4 sm:px-0 lg:max-w-3xl">
-          <div className="overflow-hidden rounded-lg bg-sky-700 bg-opacity-50 shadow-lg ring-2 ring-sky-700 backdrop-blur">
-            <ul className="w-48 rounded-lg bg-white text-sm font-medium text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white">
+    <Popover>
+      <PopoverTrigger>{children}</PopoverTrigger>
+      <PopoverContent>
+        <Command>
+          <CommandList>
+            <CommandGroup>
               <SkillLevelRadio
                 level="Multiplicador"
                 selectedSkillLevel={skillLevel}
@@ -64,17 +46,17 @@ export default function SkillPopover({ children }: SkillPopoverProps) {
                 selectedSkillLevel={skillLevel}
                 handleSkillLevelChange={handleSkillLevelChange}
               />
-              <li className="w-full transition hover:bg-red-950 dark:border-gray-600">
-                <div className="flex items-center justify-center">
-                  <button className="my-2 flex flex-row gap-2 text-red-200">
-                    <XCircleIcon width={24} /> Remover
-                  </button>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </Popover.Panel>
-      </Transition>
+
+              {
+                level && <SkillLevelRadio
+                  handleSkillLevelChange={handleSkillLevelChange}
+                />
+              }
+
+            </CommandGroup>
+          </CommandList>
+        </Command>
+      </PopoverContent>
     </Popover>
   )
 }
