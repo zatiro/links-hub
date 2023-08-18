@@ -2,7 +2,7 @@ import LinkCard from '@/components/LinkCard'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex flex-col items-center justify-between p-24">
       <ul className="grid grid-cols-2 gap-4 sm:grid-cols-1 lg:grid-cols-3">
         <LinkCard
           area="Manufatura"
