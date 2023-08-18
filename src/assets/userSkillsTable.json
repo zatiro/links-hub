@@ -1,0 +1,70 @@
+{
+  "list": [
+    {
+      "category": "Contact",
+      "level": "Multiplicador",
+      "name": "Gmail",
+      "url": "https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"
+    },
+    {
+      "category": "Contact",
+      "level": "Multiplicador",
+      "name": "GroupMe",
+      "url": "https://img.shields.io/badge/GroupMe-00AFF0?style=for-the-badge&logo=groupme&logoColor=white"
+    },
+    {
+      "category": "Contact",
+      "level": "Experiente",
+      "name": "icq_new",
+      "url": "https://img.shields.io/badge/icq_new-black?style=for-the-badge&logo=icq&logolColor=42F425"
+    },
+    {
+      "category": "Contact",
+      "level": "Experiente",
+      "name": "Kik",
+      "url": "https://img.shields.io/badge/Kik-5AC710?style=for-the-badge&logo=kik&logoColor=white"
+    },
+    {
+      "category": "Contact",
+      "level": "Experiente",
+      "name": "Line",
+      "url": "https://img.shields.io/badge/Line-00C300?style=for-the-badge&logo=line&logoColor=white"
+    },
+    {
+      "category": "Contact",
+      "level": "Experiente",
+      "name": "matrix",
+      "url": "https://img.shields.io/badge/matrix-000000?style=for-the-badge&logo=Matrix&logoColor=white"
+    },
+    {
+      "category": "Contact",
+      "level": "Aprendiz",
+      "name": "Messenger",
+      "url": "https://img.shields.io/badge/Messenger-00B2FF?style=for-the-badge&logo=messenger&logoColor=white"
+    },
+    {
+      "category": "Contact",
+      "level": "Aprendiz",
+      "name": "Microsoft Outlook",
+      "url": "https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white"
+    },
+    {
+      "category": "Contact",
+      "level": "Aprendiz",
+      "name": "ProtonMail",
+      "url": "https://img.shields.io/badge/ProtonMail-8B89CC?style=for-the-badge&logo=protonmail&logoColor=white"
+    },
+    {
+      "category": "Contact",
+      "level": "Interessado",
+      "name": "Signal",
+      "url": "https://img.shields.io/badge/Signal-%23039BE5.svg?&style=for-the-badge&logo=Signal&logoColor=white"
+    },
+    {
+      "category": "Contact",
+      "level": "Interessado",
+      "name": "Telegram",
+      "url": "https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"
+    }
+  ]
+}
