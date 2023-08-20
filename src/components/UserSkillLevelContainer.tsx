@@ -4,7 +4,7 @@ import SkillPopover from './SkillPopover'
 
 import { SkillLevelOptions, skillLevelIcon } from './SkillLevelRadio'
 
-type SkillLevelContainer = {
+type SkillLevelContainerProps = {
   level: SkillLevelOptions
   skills: Skill[]
 }
@@ -12,7 +12,7 @@ type SkillLevelContainer = {
 export default function UserSkillLevelContainer({
   level,
   skills,
-}: SkillLevelContainer) {
+}: SkillLevelContainerProps) {
   return (
     <div className="py-2">
       <h2 className="flex flex-row gap-3 border-b-2 py-1">
@@ -21,7 +21,7 @@ export default function UserSkillLevelContainer({
       <div className="mt-2 flex flex-wrap justify-start gap-2">
         {skills.map((skill, index) => {
           return (
-            <SkillPopover key={index} level={level} skillName={skill.name}>
+            <SkillPopover key={index} skill={skill}>
               <SkillBadge url={skill.url} />
             </SkillPopover>
           )

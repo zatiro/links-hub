@@ -1,4 +1,5 @@
 import SkillBadge from './SkillBadge'
+import { SkillLevelOptions } from './SkillLevelRadio'
 import SkillPopover from './SkillPopover'
 import { ScrollArea } from './ui/scroll-area'
 
@@ -6,7 +7,7 @@ export type Skill = {
   category: string
   name: string
   url: string
-  level?: string
+  level?: SkillLevelOptions
 }
 
 export type SkillList = {
@@ -35,7 +36,7 @@ export default function SkillsList({ list }: SkillList) {
                 <div className="mb-2 flex flex-wrap justify-start gap-2">
                   {groupedSkills[key].map((skill: Skill, index: number) => {
                     return (
-                      <SkillPopover key={index} skillName={skill.name}>
+                      <SkillPopover key={index} skill={skill}>
                         <SkillBadge url={skill.url} />
                       </SkillPopover>
                     )

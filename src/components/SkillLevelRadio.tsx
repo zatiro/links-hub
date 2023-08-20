@@ -12,6 +12,8 @@ import {
   LightBulbIcon as LightBulbIconSolid,
 } from '@heroicons/react/24/solid'
 import { CommandItem } from './ui/command'
+import { useUserSkillContext } from '@/context/UserSkillProvider'
+import { Skill } from './SkillsList'
 
 export type SkillLevelOptions =
   | 'Multiplicador'
@@ -22,8 +24,7 @@ export type SkillLevelOptions =
 
 type SkillLevelRadioProps = {
   level?: SkillLevelOptions
-  selectedSkillLevel?: string
-  handleSkillLevelChange: (level: string) => void
+  skill: Skill
 }
 
 export function skillLevelIcon(level?: SkillLevelOptions, isSelected?: boolean) {
@@ -70,24 +71,22 @@ export function skillLevelIcon(level?: SkillLevelOptions, isSelected?: boolean) 
 
 export default function SkillLevelRadio({
   level = "",
-  selectedSkillLevel,
-  handleSkillLevelChange,
+  skill,
 }: SkillLevelRadioProps) {
-  const isSelected = selectedSkillLevel === level
+  const isSelected = skill?.level === level
+  const { changeSkillLevel } = useUserSkillContext()
 
   return (
-    <>
-      <CommandItem>
-        <button onClick={() => { if (!isSelected) handleSkillLevelChange(level) }} className='flex w-full items-center justify-between pr-4'>
-          <div className='flex flex-col items-start'>
-            <p className={!level ? "text-destructive" : ""}>{level || "Remover"}</p>
-            <p className="text-sm text-muted-foreground">
-              Melhor nível de todos.
-            </p>
-          </div>
-          {skillLevelIcon(level, isSelected)}
-        </button>
-      </CommandItem>
-    </>
+    <CommandItem>
+      <button onClick={() => { if (!isSelected) changeSkillLevel({ skill, toLevel: level }) }} className='flex w-full items-center justify-between pr-4'>
+        <div className='flex flex-col items-start'>
+          <p className={!level ? "text-red-500" : ""}>{level || "Remover"}</p>
+          <p className="text-sm text-muted-foreground">
+            Melhor nível de todos.
+          </p>
+        </div>
+        {skillLevelIcon(level, isSelected)}
+      </button>
+    </CommandItem>
   )
 }

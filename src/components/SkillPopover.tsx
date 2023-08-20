@@ -1,24 +1,16 @@
 import { useState } from 'react'
-import SkillLevelRadio from './SkillLevelRadio'
+import SkillLevelRadio, { SkillLevelOptions } from './SkillLevelRadio'
 import { Popover, PopoverContent, PopoverTrigger } from './ui/popover'
 import { Command, CommandList, CommandGroup } from './ui/command'
+import { Skill } from './SkillsList'
 
 type SkillPopoverProps = {
   children: JSX.Element
+  skill: Skill
   key?: number
-  level?: string
-  skillName: string
 }
 
-export default function SkillPopover({ children, level, skillName }: SkillPopoverProps) {
-  const [skillLevel, setSkillLevel] = useState(level)
-
-  function handleSkillLevelChange(level: string) {
-    setSkillLevel(level)
-
-    console.log(level, skillName)
-  }
-
+export default function SkillPopover({ children, skill }: SkillPopoverProps) {
   return (
     <Popover>
       <PopoverTrigger>{children}</PopoverTrigger>
@@ -27,30 +19,24 @@ export default function SkillPopover({ children, level, skillName }: SkillPopove
           <CommandList>
             <CommandGroup>
               <SkillLevelRadio
+                skill={skill}
                 level="Multiplicador"
-                selectedSkillLevel={skillLevel}
-                handleSkillLevelChange={handleSkillLevelChange}
               />
               <SkillLevelRadio
+                skill={skill}
                 level="Experiente"
-                selectedSkillLevel={skillLevel}
-                handleSkillLevelChange={handleSkillLevelChange}
               />
               <SkillLevelRadio
+                skill={skill}
                 level="Aprendiz"
-                selectedSkillLevel={skillLevel}
-                handleSkillLevelChange={handleSkillLevelChange}
               />
               <SkillLevelRadio
+                skill={skill}
                 level="Interessado"
-                selectedSkillLevel={skillLevel}
-                handleSkillLevelChange={handleSkillLevelChange}
               />
 
               {
-                level && <SkillLevelRadio
-                  handleSkillLevelChange={handleSkillLevelChange}
-                />
+                skill?.level && <SkillLevelRadio skill={skill} />
               }
 
             </CommandGroup>
