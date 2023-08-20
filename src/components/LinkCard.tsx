@@ -4,6 +4,7 @@ import { StarIcon as StarIconSolid } from '@heroicons/react/24/solid'
 import { StarIcon as StarIconOutline } from '@heroicons/react/24/outline'
 import { useState } from 'react'
 import Image from 'next/image'
+import { Badge } from './ui/badge'
 
 type LinkCardProps = {
   type?: string
@@ -64,10 +65,10 @@ export default function LinkCard({
         </div>
       </header>
       <section className="">
-        <div className="text-md flex gap-2 divide-x pt-3">
-          <span className="">{role}</span>
-          <span className="pl-2">{categorie}</span>
-          <span className="pl-2">{area}</span>
+        <div className="flex gap-2 divide-x pt-3">
+          <Badge variant={'outline'}>{role}</Badge>
+          <Badge variant={'outline'}>{categorie}</Badge>
+          <Badge variant={'outline'}>{area}</Badge>
         </div>
       </section>
       <footer className="mt-2 flex flex-col items-end justify-end border-t border-sky-700 pt-2">
