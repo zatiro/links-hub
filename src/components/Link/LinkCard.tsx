@@ -53,7 +53,7 @@ export default function LinkCard({
   }
 
   return (
-    <div className='relative'>
+    <div className='relative h-max'>
       <TooltipProvider>
         <Tooltip>
           <TooltipTrigger asChild>
