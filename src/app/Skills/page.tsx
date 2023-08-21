@@ -1,14 +1,14 @@
 'use client'
 
 
-import UserSkills from '@/components/UserSkills'
+import UserSkills from '@/components/Skill/UserSkills'
 import UserSkillProvider from '@/context/UserSkillProvider'
 
 // Quando essa lista vier do backend, já deve desconsiderar as skills do usuário atual
 
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import SearchSkill from '@/components/SearchSkill'
+import SearchSkill from '@/components/Skill/SearchSkill'
 
 
 export default function Home() {

@@ -1,7 +1,6 @@
-import { useState } from 'react'
-import SkillLevelRadio, { SkillLevelOptions } from './SkillLevelRadio'
-import { Popover, PopoverContent, PopoverTrigger } from './ui/popover'
-import { Command, CommandList, CommandGroup } from './ui/command'
+import SkillLevelRadio from './SkillLevelRadio'
+import { Popover, PopoverContent, PopoverTrigger } from '../ui/popover'
+import { Command, CommandList, CommandGroup } from '../ui/command'
 import { Skill } from './SkillsList'
 
 type SkillPopoverProps = {

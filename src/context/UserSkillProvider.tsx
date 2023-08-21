@@ -1,7 +1,7 @@
 import { useState, createContext, useContext } from "react";
 
-import { Skill, SkillList } from "@/components/SkillsList";
-import { SkillLevelOptions } from "@/components/SkillLevelRadio";
+import { Skill, SkillList } from "@/components/Skill/SkillsList";
+import { SkillLevelOptions } from "@/components/Skill/SkillLevelRadio";
 
 import userSkillsTable from '../assets/userSkillsTable.json'
 // Quando for buscar todas as habilidades, deve remover as que o usuário já tem
@@ -59,7 +59,6 @@ export default function UserSkillProvider({ children }: UserSkillProviderProps) 
     useState<groupedUserSkills>(groupJsonBy(userSkillJson))
 
   function changeSkillLevel({ skill, toLevel }: changeSkillLevelProps) {
-    console.log(skill, toLevel)
     let resultUser: Skill[] = []
     let resultAll: Skill[] = []
 
@@ -75,6 +74,7 @@ export default function UserSkillProvider({ children }: UserSkillProviderProps) 
     }
     // Usuário está removendo sua habilidade, então ela volta para a pesquisa
     else {
+      delete skill.level
       resultAll.push(skill)
     }
 

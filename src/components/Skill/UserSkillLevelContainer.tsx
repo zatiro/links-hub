@@ -1,4 +1,4 @@
-import SkillBadge from '@/components/SkillBadge'
+import SkillBadge from '@/components/Skill/SkillBadge'
 import { Skill } from './SkillsList'
 import SkillPopover from './SkillPopover'
 
@@ -19,13 +19,15 @@ export default function UserSkillLevelContainer({
         {skillLevelIcon(level, true)} {level}
       </h2>
       <div className="mt-2 flex flex-wrap justify-start gap-2">
-        {skills.map((skill, index) => {
+        {skills.length > 0 ? skills.map((skill, index) => {
           return (
             <SkillPopover key={index} skill={skill}>
               <SkillBadge url={skill.url} />
             </SkillPopover>
           )
-        })}
+        }) : (
+          <></>
+        )}
       </div>
     </div>
   )

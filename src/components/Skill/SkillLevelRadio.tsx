@@ -11,7 +11,7 @@ import {
   BeakerIcon as BeakerIconSolid,
   LightBulbIcon as LightBulbIconSolid,
 } from '@heroicons/react/24/solid'
-import { CommandItem } from './ui/command'
+import { CommandItem } from '../ui/command'
 import { useUserSkillContext } from '@/context/UserSkillProvider'
 import { Skill } from './SkillsList'
 

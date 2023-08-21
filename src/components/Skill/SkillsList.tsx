@@ -1,7 +1,7 @@
 import SkillBadge from './SkillBadge'
 import { SkillLevelOptions } from './SkillLevelRadio'
 import SkillPopover from './SkillPopover'
-import { ScrollArea } from './ui/scroll-area'
+import { ScrollArea } from '../ui/scroll-area'
 
 export type Skill = {
   category: string
